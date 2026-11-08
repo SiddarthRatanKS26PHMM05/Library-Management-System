@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System - Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Library Management System</h1>
+      <p>Member registration</p>
+    </header>
+    <section class="panel">
+      <h2>Member Registration</h2>
+      <p>Enter your details to continue.</p>
+      <form id="registerForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" minlength="3" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Register</button>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

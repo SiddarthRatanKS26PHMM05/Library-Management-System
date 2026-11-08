@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff9e8;
+  color: #302719;
+}
+
+.container {
+  width: min(900px, calc(100% - 32px));
+  margin: 28px auto;
+}
+
+header {
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.panel {
+  background: #fff0c9;
+  border: 1px solid #d9b875;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 5px;
+}
+
+input {
+  width: 100%;
+  max-width: 430px;
+  padding: 10px;
+  border: 1px solid #d9b875;
+  border-radius: 4px;
+  background: #fff8e7;
+  font: inherit;
+}
+
+button {
+  padding: 10px 18px;
+  margin: 12px 6px 0 0;
+  border: none;
+  border-radius: 4px;
+  background: #e99a3d;
+  color: #30200d;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  background: #d94f88;
+  color: white;
+}
+
+button:focus-visible {
+  outline: 2px solid #302719;
+  outline-offset: 2px;
+}
+
+button.secondary {
+  background: #e8d8b4;
+  color: #302719;
+}
+
+button.secondary:hover {
+  background: #d94f88;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav button {
+  margin: 0;
+}
+
+.message {
+  min-height: 22px;
+  font-weight: bold;
+  color: #8b3155;
+}
+
+.search {
+  margin: 8px 0 12px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff8e7;
+}
+
+th, td {
+  border: 1px solid #d9b875;
+  padding: 9px;
+  text-align: left;
+}
+
+th {
+  background: #ffe7a8;
+}
+
+.action-button {
+  padding: 6px 10px;
+  margin: 2px;
+  font-size: 13px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 16px auto;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  table {
+    min-width: 620px;
+  }
+}
